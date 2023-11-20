@@ -11,15 +11,15 @@ Press <kbd>K</kbd> to show Kalman predictions.
 Frames are subtracted to find what changed between them.
 This is thresholded to black and white.
 
-<img src="https://gitlab.jhuapl.edu/manizsg1/arguss/raw/master/max_code/images/difference.png" width="300">
+<img src="https://github.com/mgoldb2/arguss/blob/master/images/difference.png" width="300">
 
 This is then denoised and turned into a binary-style image.
 
-<img src="https://gitlab.jhuapl.edu/manizsg1/arguss/raw/master/max_code/images/denoiseddifference.png" width="300">
+<img src="https://github.com/mgoldb2/arguss/blob/master/images/denoiseddifference.png" width="300">
 
 K-means clustering is done on this image. The clusters are drawn as rectangles.
 
-<img src="https://gitlab.jhuapl.edu/manizsg1/arguss/raw/master/max_code/images/cluster.png" width="300">
+<img src="https://github.com/mgoldb2/arguss/blob/master/images/cluster.png" width="300">
 
 Each cluster is evaluated to determine whether it existed in the previous frame.
 Each frame a cluster exists, its significance increases.
@@ -27,7 +27,7 @@ The more significant a cluster is, the redder it will appear.
 Once a cluster reaches a certain significance, camshift tracking will begin on it.
 Camshift can also be manually started by clicking and dragging over an area on the screen.
 
-<img src="https://gitlab.jhuapl.edu/manizsg1/arguss/raw/master/max_code/images/camshift.png" width="300">
+<img src="https://github.com/mgoldb2/arguss/blob/master/images/camshift.png" width="300">
 
 If the area inside the camshift box becomes too different from what it is looking for, it will stop tracking.
 
